@@ -1,0 +1,111 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.grid {
+    height: 80vmin;
+    width: 80vmin;
+    max-height: 800px;
+    max-width: 800px;
+    background-color: rgb(165, 194, 225);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border: 10px solid #b2cce8;
+}
+
+div {
+    font-size: 5vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 900px) {
+    div {
+        font-size: 50px;
+    }
+}
+
+.safe, .bomb, .checked {
+    width: 10%;
+    height: 10%;
+    border: 5px solid;
+    border-color: #9ab1c9 #87a9cf #84a5c8 #82a1c3;
+    box-sizing: border-box;
+}
+
+.checked {
+    border: 2px solid rgb(81, 94, 107);
+    background-color: rgba(165, 194, 225, 0.729);
+}
+
+.one {
+    color: #e76346;
+}
+
+.two {
+    color: #4199d3;
+}
+
+.three {
+    color: #35ac37;
+}
+
+.four {
+    color: #bb41d3;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(120, 150, 180);
+    font-size: 24px;
+    color: white; 
+    text-align: center; 
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(34, 32, 47, 0.5); 
+    font-family: 'Arial', sans-serif; 
+}
+
+body {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+button {
+    margin: 20px 0;
+    border: 2px solid rgb(120, 150, 180);
+    background-color: rgb(71, 143, 191);
+    border-radius: 5px;
+    font-size: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: rgb(90, 150, 220); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#game-text {
+    font-size: 4vw;
+    max-width: 100%;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (min-width: 800px) {
+    #game-text {
+        font-size: 32px;
+    }
+}
